@@ -30,14 +30,112 @@ header .header-mid {
     font-size: 4rem; }
   header .header-mid .mid-image {
     margin-left: auto;
-    margin-top: 1%;
+    margin-top: 1.5%;
     width: 50%;
     height: 7rem;
     background: url(img/panorama.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid #197ee3; }
+header nav {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2rem;
+  background: #536170;
+  margin: 1.5% 3%; }
+  header nav .hamburgerButton {
+    display: none; }
+  header nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: 3%; }
+  header nav li {
+    list-style: none; }
+  header nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 1.7rem; }
+    header nav a:hover {
+      background: #3b4550; }
+  header nav li:last-child {
+    margin-left: auto;
+    margin-right: 2%; }
+    header nav li:last-child input {
+      padding: .7rem 1rem;
+      border: none;
+      background: #c0c5ce; }
+    header nav li:last-child input[type=submit] {
+      background: #197ee3;
+      color: white; }
+      header nav li:last-child input[type=submit]:hover {
+        color: black; }
+  header nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #536170;
+    min-width: 16rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  header nav .dropdown-content a {
+    color: white;
+    padding: 1.5rem 1.8rem;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  header nav .dropdown-content a:hover {
+    background-color: #3b4550; }
+  header nav .dropdown:hover .dropdown-content {
+    display: block; }
 
+.mid {
+  margin: 1% 3%;
+  display: flex; }
+  .mid .cover-image {
+    flex-basis: 70%;
+    background: url(img/cover.jpg);
+    background-position: center;
+    background-size: cover; }
+  .mid .cover-text {
+    flex-basis: 30%;
+    background: #197ee3;
+    padding: 2%;
+    font-size: 1.1rem; }
+    .mid .cover-text h3 {
+      margin-bottom: 2%; }
+    .mid .cover-text button {
+      width: 35%;
+      height: 1.6rem;
+      margin-top: 3%; }
+    .mid .cover-text a {
+      text-decoration: none;
+      color: #197ee3; }
+
+@media (max-width: 1000px) {
+  header nav ul li {
+    display: none; }
+  header nav .hamburgerButton {
+    display: flex;
+    align-items: center;
+    padding-left: 3%; }
+    header nav .hamburgerButton button {
+      display: inline-block;
+      padding: .4rem .5rem;
+      cursor: pointer;
+      margin-left: auto;
+      margin-right: 1.5rem; }
+  header nav ul {
+    display: block; }
+  header .toggleNav {
+    display: block; }
+  header .li-hide {
+    display: none; }
+  header .last-li-positioning {
+    display: inline-block;
+    margin: 1rem 0; }
+    header .last-li-positioning input {
+      margin-left: 1.3rem; }
+    header .last-li-positioning input[type=submit] {
+      margin-top: 3%; } }
 @media (max-width: 650px) {
   header .header-top {
     flex-wrap: wrap; }
@@ -49,7 +147,18 @@ header .header-mid {
   header .header-mid p {
     font-size: 3rem; }
   header .header-mid .mid-image {
-    height: 5rem; } }
+    height: 5rem; }
+  header nav .hamburgerButton a {
+    padding: 1.2rem; }
+  header nav .hamburgerButton button {
+    padding: .2rem .3rem;
+    margin-right: .8rem; }
+  header nav ul li a {
+    padding: 1.2rem; }
+  header nav .dropdown-content {
+    min-width: 10rem; }
+  header nav .dropdown-content a {
+    padding: 1rem 1.3rem; } }
 @media (max-width: 350px) {
   header .header-top ul {
     font-size: .83rem; }
